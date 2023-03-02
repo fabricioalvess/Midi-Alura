@@ -16,7 +16,7 @@
         const instrumento = tecla.classList[1];//nome da variavel
         const idAudio = `#som_${instrumento}`;//criando uma string 
 
-       tecla.onclick = function(e){//quando clicar na tecla
+       tecla.touchstart= function(e){//quando clicar na tecla
         tocaSom(idAudio);//funcao tocasom recebe id audio.
        }
        
